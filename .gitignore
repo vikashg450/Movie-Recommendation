@@ -1,0 +1,7 @@
+.env
+.venv
+__pycache__
+
+# Ignore large unneeded files on GitHub
+movies_metadata.csv
+movies.ipynb

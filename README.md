@@ -55,4 +55,4 @@ API_BASE="http://localhost:8000" streamlit run app.py
 Currently, the default frontend setup connects to a hosted backend on Render. Modify the `API_BASE` variable inside `app.py` or through your host's environment settings if you wish to deploy the backend to your own production server.
 
 ---
-*Created for portfolio and learning purposes.*
+

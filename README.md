@@ -2,82 +2,68 @@
 # 🎬 Movie Recommendation System
 
 <p align="center">
-  <img src="https://your-image-link.com/banner.png" alt="Movie Recommendation System Banner" width="100%">
+  <img src="https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/" width="100%" alt="Movie Recommendation Banner"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/your-username/movie-recommendation-system/stargazers">
-    <img src="https://img.shields.io/github/stars/your-username/movie-recommendation-system?style=for-the-badge" />
-  </a>
-  
-  <a href="https://github.com/your-username/movie-recommendation-system/network/members">
-    <img src="https://img.shields.io/github/forks/your-username/movie-recommendation-system?style=for-the-badge" />
+  <a href="https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/?view=details&id=1669050">
+    <img src="https://img.shields.io/badge/Live-Demo-yellow?style=for-the-badge&logo=streamlit">
   </a>
 
-  <a href="https://github.com/your-username/movie-recommendation-system/issues">
-    <img src="https://img.shields.io/github/issues/your-username/movie-recommendation-system?style=for-the-badge" />
+  <a href="https://github.com/your-username/movie-recommendation-system">
+    <img src="https://img.shields.io/github/stars/your-username/movie-recommendation-system?style=for-the-badge">
+  </a>
+
+  <a href="https://github.com/your-username/movie-recommendation-system/network/members">
+    <img src="https://img.shields.io/github/forks/your-username/movie-recommendation-system?style=for-the-badge">
   </a>
 </p>
 
 ---
 
-## 🚀 Live Demo
+# 🚀 Live Demo
 
-🔗 **Frontend App:**  
-https://your-frontend-link.com
+## 🌐 Streamlit App
 
-🔗 **Backend API:**  
-https://your-backend-link.com
+🔗 https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/?view=details&id=1669050
 
 ---
 
-# 📸 Screenshots
+# 📸 Application Preview
 
-## 🏠 Home Page
-
-![Home Screenshot](https://your-image-link.com/home.png)
-
----
-
-## 🎯 Recommendation Result
-
-![Recommendation Screenshot](https://your-image-link.com/recommendation.png)
-
----
-
-## 🔥 Trending Movies Section
-
-![Trending Screenshot](https://your-image-link.com/trending.png)
+![Movie Recommendation App](./assets/movie-rec-preview.png)
 
 ---
 
 # ✨ Features
 
-- 🎬 Movie recommendation engine
+- 🎬 Smart Movie Recommendation Engine
 - 🧠 TF-IDF + Cosine Similarity
-- ⚡ FastAPI backend
-- 🎨 Streamlit frontend
-- 🌍 TMDB API integration
-- 🔥 Trending & Popular movies
-- ⭐ Ratings and posters
-- 🚀 Fast response time
+- ⚡ FastAPI Backend
+- 🎨 Streamlit Frontend
+- 🌍 TMDB API Integration
+- 🔥 Trending Movies
+- ⭐ Top Rated Movies
+- 📅 Upcoming Releases
+- 🚀 Fast Recommendation System
 
 ---
 
 # 🛠️ Tech Stack
 
-| Technology | Purpose |
+| Technology | Usage |
 |---|---|
 | Python | Core Language |
-| FastAPI | Backend |
-| Streamlit | Frontend |
-| scikit-learn | Machine Learning |
+| FastAPI | Backend API |
+| Streamlit | Frontend UI |
+| scikit-learn | Recommendation Engine |
 | Pandas | Data Processing |
 | TMDB API | Movie Data |
+| httpx | Async Requests |
 
 ---
 
-# 📂 Folder Structure
+# 📂 Project Structure
 
 ```bash
 movie-recommendation-system/
@@ -88,14 +74,33 @@ movie-recommendation-system/
 ├── similarity.pkl
 ├── requirements.txt
 ├── .env
+├── assets/
+│   └── movie-rec-preview.png
 └── README.md
 ````
 
 ---
 
+# 🧠 How Recommendation Works
+
+The recommendation engine uses:
+
+* TF-IDF Vectorization
+* Cosine Similarity Matrix
+* Movie Metadata Analysis
+
+### Workflow
+
+1. User selects a movie
+2. Similarity matrix compares vectors
+3. Top matching movies are returned
+4. TMDB API fetches posters and ratings
+
+---
+
 # ⚙️ Installation
 
-## Clone Repository
+## 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/your-username/movie-recommendation-system.git
@@ -104,7 +109,7 @@ cd movie-recommendation-system
 
 ---
 
-## Create Virtual Environment
+## 2️⃣ Create Virtual Environment
 
 ### Windows
 
@@ -122,7 +127,7 @@ source .venv/bin/activate
 
 ---
 
-## Install Dependencies
+## 3️⃣ Install Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -130,13 +135,17 @@ pip install -r requirements.txt
 
 ---
 
-## Add TMDB API Key
+## 4️⃣ Add TMDB API Key
 
 Create `.env` file:
 
 ```env
 TMDB_API_KEY=your_tmdb_api_key
 ```
+
+Get free API key from:
+
+🔗 [https://developer.themoviedb.org](https://developer.themoviedb.org)
 
 ---
 
@@ -146,7 +155,7 @@ TMDB_API_KEY=your_tmdb_api_key
 uvicorn main:app --reload
 ```
 
-Backend runs at:
+Backend URL:
 
 ```bash
 http://localhost:8000
@@ -160,7 +169,7 @@ http://localhost:8000
 API_BASE="http://localhost:8000" streamlit run app.py
 ```
 
-Frontend runs at:
+Frontend URL:
 
 ```bash
 http://localhost:8501
@@ -168,23 +177,58 @@ http://localhost:8501
 
 ---
 
-# 🧠 Recommendation System
+# 📸 UI Preview
 
-This project uses:
+## 🔥 Trending Movies
 
-* TF-IDF Vectorization
-* Cosine Similarity
-* Movie metadata embeddings
+* Dune: Part Two
+* Oppenheimer
+* Deadpool & Wolverine
+* Inside Out 2
+* Furiosa
 
-to recommend similar movies instantly.
+---
+
+## ⭐ Personalized Recommendations
+
+* Interstellar
+* Arrival
+* Blade Runner 2049
+* Ex Machina
+* The Martian
+
+---
+
+# 🏗️ Architecture
+
+```text
+Frontend (Streamlit)
+        ⇅
+Backend (FastAPI)
+        ⇅
+TMDB API
+
+ML Layer:
+- movies.pkl
+- similarity.pkl
+```
+
+---
+
+# ⚡ Performance
+
+* Async FastAPI Requests
+* Cached ML Models
+* Optimized Similarity Matrix
+* Fast Search & Recommendation
 
 ---
 
 # 📌 Future Improvements
 
 * 👤 User Authentication
-* ❤️ Watchlist
-* 🤖 AI Recommendations
+* ❤️ Watchlist Feature
+* 🤖 AI-based Recommendations
 * ☁️ Cloud Deployment
 * 🐳 Docker Support
 
@@ -192,7 +236,13 @@ to recommend similar movies instantly.
 
 # 🤝 Contributing
 
-Pull requests are welcome.
+Contributions are welcome.
+
+1. Fork Repository
+2. Create Branch
+3. Commit Changes
+4. Push Changes
+5. Open Pull Request
 
 ---
 

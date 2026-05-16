@@ -1,2 +1,0 @@
-# Streamlit Cloud packages.txt
-# Deliberately left empty to prevent broken apt-get dependency errors.

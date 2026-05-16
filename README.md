@@ -1,58 +1,231 @@
-# Movie Recommendation System 🎬
+````markdown
+# 🎬 MovieRec — Movie Recommendation System
 
-A modern, full-stack Movie Recommendation application built with a **Streamlit** frontend and a **FastAPI** backend. It provides movie search, detailed information, and intelligent recommendations using both a local Machine Learning model (TF-IDF) and live data from the TMDB API.
-
-## Features ✨
-*   **Intelligent Recommendations:** 
-    *   Finds similar movies based on plot and text similarity using a precomputed **TF-IDF Machine Learning** approach.
-    *   Discovers related movies matching current genres dynamically via the TMDB API.
-*   **Modern Frontend UI:** A sleek, fully responsive interface powered by Streamlit, featuring custom CSS styling and smooth dropdown suggestions.
-*   **Blazing Fast Backend:** The FastAPI backend relies on asynchronous network requests (`httpx`) and caches the large ML models into memory upon startup to guarantee instant recommendation routing.
-*   **Fail-Resilient Architecture:** Even if the local ML recommendation dataset misses a movie, the internal engine gracefully falls back to TMDB network queries to ensure users always receive content.
-
-## Architecture Structure 🛠️
-*   `app.py`: The Streamlit frontend client. Contains UI layouts, routing logic, and HTTP interaction.
-*   `main.py`: The FastAPI backend server. Handles external TMDB calls and internal logic computation.
-*   `.pkl` files: Pre-computed machine learning matrices and datasets (Pandas DataFrames, Sparse Matrices) representing the movie knowledge base.
-
-## Local Setup & Installation 🚀
-
-### 1. Prerequisites
-Ensure you have Python 3.10+ installed.
-
-### 2. Install Dependencies
-```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 3. API Key Setup
-Create a `.env` file in the root of the project and add your TMDB API Key. You can get one for free at [The Movie Database (TMDB)](https://developer.themoviedb.org/docs/getting-started).
-```env
-TMDB_API_KEY=your_api_key_here
-```
-
-### 4. Running the Application locally
-**Start the Backend:**
-```bash
-uvicorn main:app --reload
-```
-*The backend server will launch at `http://localhost:8000`*
-
-**Start the Frontend:**
-*In a separate terminal window, run the following based on your OS:*
-```bash
-# Windows
-$env:API_BASE="http://localhost:8000"; streamlit run app.py
-
-# Mac / Linux
-API_BASE="http://localhost:8000" streamlit run app.py
-```
-*The frontend interface will become available at `http://localhost:8501`*
-
-## Deployment 🌐
-Currently, the default frontend setup connects to a hosted backend on Render. Modify the `API_BASE` variable inside `app.py` or through your host's environment settings if you wish to deploy the backend to your own production server.
+A full-stack movie recommendation app built with **Streamlit**, **FastAPI**, and a **TF-IDF Machine Learning model** to deliver smart movie suggestions along with live movie data from TMDB.
 
 ---
 
+## 🚀 Features
+
+- 🎯 TF-IDF based movie recommendation engine
+- 🌍 Live movie data from TMDB API
+- ⚡ FastAPI backend with async requests
+- 🎨 Streamlit frontend UI
+- 🔥 Trending, Popular, Top Rated, Upcoming movies
+- 🧠 Cosine similarity recommendation model
+- 🛡️ Genre-based fallback recommendation system
+- 🚀 Fast response time with cached ML models
+
+---
+
+## 🛠️ Tech Stack
+
+- Python 3.10+
+- FastAPI
+- Streamlit
+- scikit-learn
+- Pandas
+- httpx
+- TMDB API
+
+---
+
+# 📂 Project Architecture
+
+```text
+Frontend (Streamlit app.py)
+        ⇅
+Backend (FastAPI main.py)
+        ⇅
+TMDB API
+
+ML Layer:
+- movies.pkl
+- similarity.pkl
+````
+
+---
+
+# 🧠 ML Recommendation Engine
+
+The recommendation system uses:
+
+* TF-IDF Vectorization
+* Cosine Similarity Matrix
+* Movie overview + metadata embeddings
+
+When a movie is selected:
+
+1. The similarity matrix finds nearest movies
+2. Results are ranked by cosine similarity score
+3. TMDB API fetches posters and live metadata
+
+---
+
+# 📦 Quick Start
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone <your-repo-url>
+cd movie-recommendation-system
+```
+
+---
+
+## 2️⃣ Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate environment:
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4️⃣ Add TMDB API Key
+
+Create a `.env` file in the root directory:
+
+```env
+TMDB_API_KEY=your_tmdb_api_key
+```
+
+Get free API key from:
+
+[https://developer.themoviedb.org](https://developer.themoviedb.org)
+
+---
+
+## 5️⃣ Start FastAPI Backend
+
+```bash
+uvicorn main:app --reload
+```
+
+Backend runs on:
+
+```text
+http://localhost:8000
+```
+
+---
+
+## 6️⃣ Start Streamlit Frontend
+
+```bash
+API_BASE="http://localhost:8000" streamlit run app.py
+```
+
+Frontend runs on:
+
+```text
+http://localhost:8501
+```
+
+---
+
+# 📁 Important Files
+
+| File               | Description              |
+| ------------------ | ------------------------ |
+| `app.py`           | Streamlit frontend       |
+| `main.py`          | FastAPI backend          |
+| `movies.pkl`       | Movie dataset            |
+| `similarity.pkl`   | Cosine similarity matrix |
+| `requirements.txt` | Python dependencies      |
+
+---
+
+# 🌐 TMDB Integration
+
+The app fetches:
+
+* Posters
+* Trending movies
+* Popular movies
+* Upcoming movies
+* Ratings
+* Metadata
+
+using the TMDB v3 API.
+
+---
+
+# ⚡ Performance
+
+* Async FastAPI requests with `httpx`
+* Startup model caching
+* Low latency recommendation generation
+* Sparse similarity matrix optimization
+
+---
+
+# 🎯 Future Improvements
+
+* User authentication
+* Personalized watchlists
+* Collaborative filtering
+* Hybrid recommendation model
+* Docker deployment
+* Cloud hosting support
+
+---
+
+# 📸 Preview
+
+```text
+🎬 Trending Movies
+⭐ Personalized Recommendations
+🔥 Top Rated Films
+📅 Upcoming Releases
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository and submit a pull request.
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# ❤️ Built With
+
+* FastAPI
+* Streamlit
+* scikit-learn
+* TMDB API
+* Python
+
+---
+
+```
+```

@@ -246,18 +246,7 @@ http://localhost:8501
 └──────────────┘         └────────────────┘
 ```
 
----
 
-# 📌 Future Improvements
-
-- 👤 User Authentication
-- ❤️ Personal Watchlist
-- 🤖 Deep Learning Recommendations
-- ☁️ Cloud Deployment
-- 🐳 Docker Support
-- 📱 Mobile Responsive UI
-
----
 
 # 🤝 Contributing
 

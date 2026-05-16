@@ -6,7 +6,7 @@
 ### AI-Powered Movie Discovery Platform
 
 <p align="center">
-  <a href="https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/?view=details&id=1669050">
+  <a href="https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app">
     <img src="https://img.shields.io/badge/🚀_Live_Demo-Streamlit_App-FFB000?style=for-the-badge&logo=streamlit&logoColor=white"/>
   </a>
 

@@ -1,101 +1,128 @@
 ````markdown
-# 🎬 MovieRec — Movie Recommendation System
+# 🎬 Movie Recommendation System
 
-A full-stack movie recommendation app built with **Streamlit**, **FastAPI**, and a **TF-IDF Machine Learning model** to deliver smart movie suggestions along with live movie data from TMDB.
+<p align="center">
+  <img src="https://your-image-link.com/banner.png" alt="Movie Recommendation System Banner" width="100%">
+</p>
 
----
+<p align="center">
+  <a href="https://github.com/your-username/movie-recommendation-system/stargazers">
+    <img src="https://img.shields.io/github/stars/your-username/movie-recommendation-system?style=for-the-badge" />
+  </a>
+  
+  <a href="https://github.com/your-username/movie-recommendation-system/network/members">
+    <img src="https://img.shields.io/github/forks/your-username/movie-recommendation-system?style=for-the-badge" />
+  </a>
 
-## 🚀 Features
-
-- 🎯 TF-IDF based movie recommendation engine
-- 🌍 Live movie data from TMDB API
-- ⚡ FastAPI backend with async requests
-- 🎨 Streamlit frontend UI
-- 🔥 Trending, Popular, Top Rated, Upcoming movies
-- 🧠 Cosine similarity recommendation model
-- 🛡️ Genre-based fallback recommendation system
-- 🚀 Fast response time with cached ML models
-
----
-
-## 🛠️ Tech Stack
-
-- Python 3.10+
-- FastAPI
-- Streamlit
-- scikit-learn
-- Pandas
-- httpx
-- TMDB API
+  <a href="https://github.com/your-username/movie-recommendation-system/issues">
+    <img src="https://img.shields.io/github/issues/your-username/movie-recommendation-system?style=for-the-badge" />
+  </a>
+</p>
 
 ---
 
-# 📂 Project Architecture
+## 🚀 Live Demo
 
-```text
-Frontend (Streamlit app.py)
-        ⇅
-Backend (FastAPI main.py)
-        ⇅
-TMDB API
+🔗 **Frontend App:**  
+https://your-frontend-link.com
 
-ML Layer:
-- movies.pkl
-- similarity.pkl
+🔗 **Backend API:**  
+https://your-backend-link.com
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+![Home Screenshot](https://your-image-link.com/home.png)
+
+---
+
+## 🎯 Recommendation Result
+
+![Recommendation Screenshot](https://your-image-link.com/recommendation.png)
+
+---
+
+## 🔥 Trending Movies Section
+
+![Trending Screenshot](https://your-image-link.com/trending.png)
+
+---
+
+# ✨ Features
+
+- 🎬 Movie recommendation engine
+- 🧠 TF-IDF + Cosine Similarity
+- ⚡ FastAPI backend
+- 🎨 Streamlit frontend
+- 🌍 TMDB API integration
+- 🔥 Trending & Popular movies
+- ⭐ Ratings and posters
+- 🚀 Fast response time
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Core Language |
+| FastAPI | Backend |
+| Streamlit | Frontend |
+| scikit-learn | Machine Learning |
+| Pandas | Data Processing |
+| TMDB API | Movie Data |
+
+---
+
+# 📂 Folder Structure
+
+```bash
+movie-recommendation-system/
+│
+├── app.py
+├── main.py
+├── movies.pkl
+├── similarity.pkl
+├── requirements.txt
+├── .env
+└── README.md
 ````
 
 ---
 
-# 🧠 ML Recommendation Engine
+# ⚙️ Installation
 
-The recommendation system uses:
-
-* TF-IDF Vectorization
-* Cosine Similarity Matrix
-* Movie overview + metadata embeddings
-
-When a movie is selected:
-
-1. The similarity matrix finds nearest movies
-2. Results are ranked by cosine similarity score
-3. TMDB API fetches posters and live metadata
-
----
-
-# 📦 Quick Start
-
-## 1️⃣ Clone the Repository
+## Clone Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/your-username/movie-recommendation-system.git
 cd movie-recommendation-system
 ```
 
 ---
 
-## 2️⃣ Create Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
-Activate environment:
+## Create Virtual Environment
 
 ### Windows
 
 ```bash
+python -m venv .venv
 .venv\Scripts\activate
 ```
 
 ### Linux / macOS
 
 ```bash
+python -m venv .venv
 source .venv/bin/activate
 ```
 
 ---
 
-## 3️⃣ Install Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -103,127 +130,81 @@ pip install -r requirements.txt
 
 ---
 
-## 4️⃣ Add TMDB API Key
+## Add TMDB API Key
 
-Create a `.env` file in the root directory:
+Create `.env` file:
 
 ```env
 TMDB_API_KEY=your_tmdb_api_key
 ```
 
-Get free API key from:
-
-[https://developer.themoviedb.org](https://developer.themoviedb.org)
-
 ---
 
-## 5️⃣ Start FastAPI Backend
+# ▶️ Run Backend
 
 ```bash
 uvicorn main:app --reload
 ```
 
-Backend runs on:
+Backend runs at:
 
-```text
+```bash
 http://localhost:8000
 ```
 
 ---
 
-## 6️⃣ Start Streamlit Frontend
+# ▶️ Run Frontend
 
 ```bash
 API_BASE="http://localhost:8000" streamlit run app.py
 ```
 
-Frontend runs on:
+Frontend runs at:
 
-```text
+```bash
 http://localhost:8501
 ```
 
 ---
 
-# 📁 Important Files
+# 🧠 Recommendation System
 
-| File               | Description              |
-| ------------------ | ------------------------ |
-| `app.py`           | Streamlit frontend       |
-| `main.py`          | FastAPI backend          |
-| `movies.pkl`       | Movie dataset            |
-| `similarity.pkl`   | Cosine similarity matrix |
-| `requirements.txt` | Python dependencies      |
+This project uses:
 
----
+* TF-IDF Vectorization
+* Cosine Similarity
+* Movie metadata embeddings
 
-# 🌐 TMDB Integration
-
-The app fetches:
-
-* Posters
-* Trending movies
-* Popular movies
-* Upcoming movies
-* Ratings
-* Metadata
-
-using the TMDB v3 API.
+to recommend similar movies instantly.
 
 ---
 
-# ⚡ Performance
+# 📌 Future Improvements
 
-* Async FastAPI requests with `httpx`
-* Startup model caching
-* Low latency recommendation generation
-* Sparse similarity matrix optimization
-
----
-
-# 🎯 Future Improvements
-
-* User authentication
-* Personalized watchlists
-* Collaborative filtering
-* Hybrid recommendation model
-* Docker deployment
-* Cloud hosting support
-
----
-
-# 📸 Preview
-
-```text
-🎬 Trending Movies
-⭐ Personalized Recommendations
-🔥 Top Rated Films
-📅 Upcoming Releases
-```
+* 👤 User Authentication
+* ❤️ Watchlist
+* 🤖 AI Recommendations
+* ☁️ Cloud Deployment
+* 🐳 Docker Support
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome!
-
-Fork the repository and submit a pull request.
+Pull requests are welcome.
 
 ---
 
 # 📜 License
 
-This project is licensed under the MIT License.
+MIT License
 
 ---
 
-# ❤️ Built With
+# ⭐ Support
 
-* FastAPI
-* Streamlit
-* scikit-learn
-* TMDB API
-* Python
+If you like this project, give it a ⭐ on GitHub.
 
 ---
 

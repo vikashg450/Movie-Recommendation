@@ -21,8 +21,8 @@
 
 ---
 
-<img src="<img width="958" height="815" alt="image" src="https://github.com/user-attachments/assets/6a9a0818-fc15-4e63-babb-25d97565fe5a" />
-" alt="Movie Recommendation Preview" width="100%" style="border-radius:12px;"/>
+<img width="958" height="815" alt="image" src="https://github.com/user-attachments/assets/6a9a0818-fc15-4e63-babb-25d97565fe5a" />
+
 
 </div>
 

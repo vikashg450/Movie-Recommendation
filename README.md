@@ -21,7 +21,8 @@
 
 ---
 
-<img src="./assets/movie-rec-preview.png" alt="Movie Recommendation Preview" width="100%" style="border-radius:12px;"/>
+<img src="<img width="958" height="815" alt="image" src="https://github.com/user-attachments/assets/6a9a0818-fc15-4e63-babb-25d97565fe5a" />
+" alt="Movie Recommendation Preview" width="100%" style="border-radius:12px;"/>
 
 </div>
 
@@ -44,9 +45,7 @@ This project delivers personalized movie recommendations instantly with a modern
 
 <div align="center">
 
-## 🌐 Try the App Now
 
-### 🔗 https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/?view=details&id=1669050
 
 </div>
 

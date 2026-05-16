@@ -1,65 +1,133 @@
 ````markdown
+<div align="center">
+
 # 🎬 Movie Recommendation System
 
-<p align="center">
-  <img src="https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/" width="100%" alt="Movie Recommendation Banner"/>
-</p>
+### AI-Powered Movie Discovery Platform
 
 <p align="center">
   <a href="https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/?view=details&id=1669050">
-    <img src="https://img.shields.io/badge/Live-Demo-yellow?style=for-the-badge&logo=streamlit">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Streamlit_App-FFB000?style=for-the-badge&logo=streamlit&logoColor=white"/>
   </a>
 
-  <a href="https://github.com/your-username/movie-recommendation-system">
-    <img src="https://img.shields.io/github/stars/your-username/movie-recommendation-system?style=for-the-badge">
-  </a>
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 
-  <a href="https://github.com/your-username/movie-recommendation-system/network/members">
-    <img src="https://img.shields.io/github/forks/your-username/movie-recommendation-system?style=for-the-badge">
-  </a>
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/ML-TF_IDF_Engine-6A5ACD?style=for-the-badge"/>
 </p>
 
 ---
 
-# 🚀 Live Demo
+<img src="./assets/movie-rec-preview.png" alt="Movie Recommendation Preview" width="100%" style="border-radius:12px;"/>
 
-## 🌐 Streamlit App
+</div>
 
-🔗 https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/?view=details&id=1669050
+---
+
+# ✨ Overview
+
+An intelligent **Movie Recommendation System** built with:
+
+- ⚡ **FastAPI** for high-performance backend APIs  
+- 🎨 **Streamlit** for beautiful interactive UI  
+- 🧠 **TF-IDF + Cosine Similarity** for smart recommendations  
+- 🌍 **TMDB API** for live movie data, posters, and ratings  
+
+This project delivers personalized movie recommendations instantly with a modern Netflix-style interface.
+
+---
+
+# 🚀 Live Application
+
+<div align="center">
+
+## 🌐 Try the App Now
+
+### 🔗 https://movie-recommendation-djmft2wgujs97bbrzsma7q.streamlit.app/?view=details&id=1669050
+
+</div>
+
+---
+
+# 🎯 Core Features
+
+<table>
+<tr>
+<td width="50%">
+
+## 🔥 Movie Discovery
+
+- Trending Movies
+- Popular Movies
+- Top Rated Collection
+- Upcoming Releases
+
+</td>
+<td width="50%">
+
+## 🧠 AI Recommendations
+
+- TF-IDF Recommendation Engine
+- Cosine Similarity Matching
+- Metadata-based Suggestions
+- Fast Search System
+
+</td>
+</tr>
+</table>
 
 ---
 
 # 📸 Application Preview
 
-![Movie Recommendation App](./assets/movie-rec-preview.png)
+## 🏠 Homepage
+
+<img src="./assets/movie-rec-preview.png" width="100%"/>
 
 ---
 
-# ✨ Features
+# ⚙️ Tech Stack
 
-- 🎬 Smart Movie Recommendation Engine
-- 🧠 TF-IDF + Cosine Similarity
-- ⚡ FastAPI Backend
-- 🎨 Streamlit Frontend
-- 🌍 TMDB API Integration
-- 🔥 Trending Movies
-- ⭐ Top Rated Movies
-- 📅 Upcoming Releases
-- 🚀 Fast Recommendation System
+<div align="center">
 
----
-
-# 🛠️ Tech Stack
-
-| Technology | Usage |
+| Technology | Purpose |
 |---|---|
-| Python | Core Language |
-| FastAPI | Backend API |
-| Streamlit | Frontend UI |
-| scikit-learn | Recommendation Engine |
-| Pandas | Data Processing |
-| TMDB API | Movie Data |
-| httpx | Async Requests |
+| 🐍 Python | Core Programming |
+| ⚡ FastAPI | Backend API |
+| 🎨 Streamlit | Frontend UI |
+| 🧠 scikit-learn | Machine Learning |
+| 📊 Pandas | Data Processing |
+| 🌍 TMDB API | Live Movie Data |
+| 🚀 httpx | Async Requests |
+
+</div>
+
+---
+
+# 🧠 Recommendation Engine
+
+The recommendation engine works using:
+
+```text
+Movie Metadata
+       ↓
+TF-IDF Vectorization
+       ↓
+Cosine Similarity
+       ↓
+Top Similar Movies
+```
+
+### Recommendation Flow
+
+1️⃣ User selects a movie  
+2️⃣ TF-IDF converts metadata into vectors  
+3️⃣ Cosine similarity finds related movies  
+4️⃣ TMDB API fetches posters & ratings  
+5️⃣ Results displayed instantly  
 
 ---
 
@@ -77,28 +145,11 @@ movie-recommendation-system/
 ├── assets/
 │   └── movie-rec-preview.png
 └── README.md
-````
+```
 
 ---
 
-# 🧠 How Recommendation Works
-
-The recommendation engine uses:
-
-* TF-IDF Vectorization
-* Cosine Similarity Matrix
-* Movie Metadata Analysis
-
-### Workflow
-
-1. User selects a movie
-2. Similarity matrix compares vectors
-3. Top matching movies are returned
-4. TMDB API fetches posters and ratings
-
----
-
-# ⚙️ Installation
+# 🚀 Installation Guide
 
 ## 1️⃣ Clone Repository
 
@@ -127,7 +178,7 @@ source .venv/bin/activate
 
 ---
 
-## 3️⃣ Install Requirements
+## 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -143,9 +194,9 @@ Create `.env` file:
 TMDB_API_KEY=your_tmdb_api_key
 ```
 
-Get free API key from:
+Get your API key here:
 
-🔗 [https://developer.themoviedb.org](https://developer.themoviedb.org)
+🔗 https://developer.themoviedb.org
 
 ---
 
@@ -177,86 +228,52 @@ http://localhost:8501
 
 ---
 
-# 📸 UI Preview
-
-## 🔥 Trending Movies
-
-* Dune: Part Two
-* Oppenheimer
-* Deadpool & Wolverine
-* Inside Out 2
-* Furiosa
-
----
-
-## ⭐ Personalized Recommendations
-
-* Interstellar
-* Arrival
-* Blade Runner 2049
-* Ex Machina
-* The Martian
-
----
-
-# 🏗️ Architecture
+# 🏗️ System Architecture
 
 ```text
-Frontend (Streamlit)
-        ⇅
-Backend (FastAPI)
-        ⇅
-TMDB API
-
-ML Layer:
-- movies.pkl
-- similarity.pkl
+          ┌──────────────────┐
+          │   Streamlit UI   │
+          └────────┬─────────┘
+                   │
+                   ▼
+          ┌──────────────────┐
+          │  FastAPI Backend │
+          └────────┬─────────┘
+                   │
+     ┌─────────────┴─────────────┐
+     ▼                           ▼
+┌──────────────┐         ┌────────────────┐
+│ TF-IDF Model │         │   TMDB API     │
+└──────────────┘         └────────────────┘
 ```
-
----
-
-# ⚡ Performance
-
-* Async FastAPI Requests
-* Cached ML Models
-* Optimized Similarity Matrix
-* Fast Search & Recommendation
 
 ---
 
 # 📌 Future Improvements
 
-* 👤 User Authentication
-* ❤️ Watchlist Feature
-* 🤖 AI-based Recommendations
-* ☁️ Cloud Deployment
-* 🐳 Docker Support
+- 👤 User Authentication
+- ❤️ Personal Watchlist
+- 🤖 Deep Learning Recommendations
+- ☁️ Cloud Deployment
+- 🐳 Docker Support
+- 📱 Mobile Responsive UI
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome!
 
-1. Fork Repository
-2. Create Branch
-3. Commit Changes
-4. Push Changes
-5. Open Pull Request
-
----
-
-# 📜 License
-
-MIT License
-
----
-
-# ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub.
-
----
-
+```bash
+Fork → Clone → Create Branch → Commit → Push → Pull Request
 ```
-```
+
+
+
+
+<div align="center">
+
+# ⭐ If you like this project, give it a Star on GitHub ⭐
+
+</div>
+````
